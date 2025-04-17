@@ -1,0 +1,61 @@
+:root {
+  /* Base - fundo principal e superfícies */
+  --color-bg: #1b1e23;           /* fundo escuro, estilo Steam */
+  --color-surface: #2b2f36;      /* painéis e cartões */
+
+  /* Neutros */
+  --color-border: #3a3f47;
+  --color-muted: #6b7280;        /* textos suaves */
+  --color-text: #d4d4d4;         /* texto principal */
+  --color-heading: #ffffff;      /* títulos */
+
+  /* Primária (inspirada no Steam) */
+  --color-primary: #66c0f4;
+  --color-primary-hover: #88d4ff;
+
+  /* Acentos (inspirados no Notion) */
+  --color-accent: #f5c518;       /* tom amarelado tipo destaque */
+  --color-accent-bg: #3e3a1f;
+
+  /* Estados */
+  --color-success: #4ade80;
+  --color-warning: #facc15;
+  --color-error: #f87171;
+
+  /* Fontes */
+  --font-heading: "Rubik", sans-serif;
+  --font-body: "Poppins", sans-serif;
+
+  /* Tamanhos de texto responsivos */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.8rem);
+  --text-sm: clamp(0.875rem, 0.82rem + 0.25vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1.05rem + 0.4vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.2rem + 0.5vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.4rem + 0.6vw, 1.75rem);
+  --text-3xl: clamp(1.875rem, 1.7rem + 0.7vw, 2.25rem);
+
+  /* Espaçamentos (multiplo de 4px) */
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-9: 36px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  --border-radius: 8px;
+  --transition-fast: 0.2s ease-in-out;
+
+  --max-w-screen-sm: max-width: 640px; 
+  --max-w-screen-md: max-width: 768px; 
+  --max-w-screen-lg: max-width: 1024px; 
+  --max-w-screen-xl: max-width: 1280px;
+}

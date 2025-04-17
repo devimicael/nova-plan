@@ -1,0 +1,10 @@
+@import "reset.css";
+
+@import "./utils/root.css";
+@import "./utils/sizes.css";
+@import "./utils/animations.css";
+@import "./utils/form.css";
+
+@import "./global/header.css";
+@import "./global/dashboard.css";
+@import "./global/main.css";

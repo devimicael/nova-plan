@@ -1,0 +1,47 @@
+<section class="projects" data-container="dynamic">
+    <div class="container-dynamic-title">
+        <h1>Projects</h1>
+        <p>Manage and create your projects here.</p>
+    </div>
+
+    <div class="container-dynamic-main">
+        <form action="#"  class="project-form" data-animation="fadeSlideIn">
+            <div class="form-item">
+                <label for="name-project">Project Name:</label>
+                <input type="text" id="name-project" name="name" required>
+            </div>
+
+            <div class="form-item">
+                <label for="description-project">Description:</label>
+                <textarea name="description" id="description-project" rows="3"></textarea>
+            </div>
+
+            <div class="form-item">
+                <label for="start-project">Start Date:</label>
+                <input type="date" name="startProject" id="start-project">
+            </div>
+
+            <div class="form-item">
+                <label for="end-project">End Date:</label>
+                <input type="date" name="endProject" id="end-project" required>
+            </div>
+
+            <div class="form-item">
+                <label for="priority-project">Priority:</label>
+                <select name="priority" id="priority-project" required>
+                    <option value="" disabled selected>SELECT</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="color-project">Color</label>
+                <input type="color" name="color" id="color-project">
+            </div>
+
+            <button type="submit" data-button="project-submit">create</button>
+        </form>
+    </div>
+</section>
