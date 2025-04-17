@@ -5,7 +5,7 @@ export default function menu() {
     const menu = document.querySelector("#menu");
     const events = ["click", "touchstart"];
 
-    function handleOpenMenu() {
+    function handleOpenMenu(event) {
         button.classList.add("active");
         menu.classList.add("active");
 

@@ -15,12 +15,12 @@ export default function outsideclick(element, events, callback) {
         }
     }
 
-    if(!element.getAttribute(attrbiute)) {
-        setTimeout(() => {
-            events.forEach(event => {
+    if(!element.hasAttribute(attrbiute)) {
+        events.forEach(event => {
+            setTimeout(() => {
                 html.addEventListener(event, handleoutside);
-                element.setAttribute(attrbiute, "");
-            })
+            });
+            element.setAttribute(attrbiute, "");
         });
     }
 }
