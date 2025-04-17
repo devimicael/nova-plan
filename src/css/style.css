@@ -6,5 +6,6 @@
 @import "./utils/form.css";
 
 @import "./global/header.css";
+@import "./global/dashboard-summary.css";
 @import "./global/dashboard.css";
 @import "./global/main.css";

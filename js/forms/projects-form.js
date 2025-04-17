@@ -1,4 +1,5 @@
 import { addProject } from "../storage/project-storage.js";
+import { renderProjects } from "../ui/render-projects.js";
 import { updatesumary } from "../ui/updatesumary.js";
 
 function projectForm() {
@@ -15,6 +16,7 @@ function projectForm() {
         const responseData = Object.fromEntries(data);
         addProject(responseData);
         updatesumary();
+        renderProjects();
     }
 
     const newForm = form.cloneNode(true);

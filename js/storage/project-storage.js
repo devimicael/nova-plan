@@ -13,7 +13,8 @@ function addProject(project) {
         {
             id: genereteID(), 
             ...project, 
-            status: "pending"
+            status: "pending",
+            tasks: []
         }
     );
     setItem(data);
