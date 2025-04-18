@@ -1,4 +1,5 @@
 import { addProject } from "../storage/project-storage.js";
+import { renderPaginationControls } from "../ui/render-pagination.js";
 import { renderProjects } from "../ui/render-projects.js";
 import { updatesumary } from "../ui/updatesumary.js";
 

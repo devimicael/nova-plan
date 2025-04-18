@@ -1,18 +1,20 @@
-import { getItem } from "../storage/storage.js";
+import { getProjects } from "../storage/project-storage.js";
+import { PROJECT_PAGE } from "../util/pageControl.js";
+import { renderPaginationControls } from "./render-pagination.js";
 
 function renderProjects() {
-    const parser = new DOMParser();
     const projectsContainer = document.querySelector(".projects-grid");
-    const data = getItem();
-
+    const parser = new DOMParser();
+    const projectsList = getProjects();
+    const projectsRender = PROJECT_PAGE.visible(projectsList);
+   
     projectsContainer.innerHTML = "";
-
-    if(data.projects.length < 1) {
+    if(projectsList.length < 1) {
         projectsContainer.innerHTML = "<p>Projetos não encontrados!</p>";
         return;
     }
 
-    data.projects.forEach(project => {
+    projectsRender.forEach(project => {
         const projectCards = document.createElement("div");
         projectCards.classList.add("project-card");
 
@@ -36,6 +38,8 @@ function renderProjects() {
         });
         projectsContainer.appendChild(projectCards);
     });
+
+    renderPaginationControls(document.querySelector(".dashboard-container"), PROJECT_PAGE.totalPage(projectsList.length));
 }
 
 export { renderProjects };

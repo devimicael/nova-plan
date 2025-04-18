@@ -4,6 +4,7 @@
 @import "./utils/sizes.css";
 @import "./utils/animations.css";
 @import "./utils/form.css";
+@import"./utils/nav-controls.css";
 
 @import "./global/header.css";
 @import "./global/dashboard-summary.css";

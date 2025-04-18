@@ -3,9 +3,9 @@ import { getProjects } from "../storage/project-storage.js";
 function updatesumary() {
     const summaryContainer = document.querySelector('[data-sumary]');
     const data = getProjects();
-    if(!data.projects) return;
+    if(!data) return;
     
-    const filter = extractingData(data.projects);
+    const filter = extractingData(data);
 
     render(summaryContainer, filter);
 }

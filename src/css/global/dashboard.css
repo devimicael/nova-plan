@@ -1,5 +1,6 @@
 .dashboard-container {
     margin-top: var(--space-12);
+    position: relative;
 }
 
 .dashboard-container > h2 {
@@ -10,8 +11,10 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--space-4);
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
 }
 
 .project-card {
@@ -24,7 +27,7 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--space-4);
 
     opacity: 0;
@@ -64,6 +67,7 @@
     grid-column: 2;
     grid-row: 1;
 }
+
 
 .projects-grid p.project-description {
     grid-column: 1/ -1;

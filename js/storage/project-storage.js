@@ -25,7 +25,7 @@ function getProjects() {
     
     if(!data) return;
 
-    return data;
+    return data.projects;
 }
 
 export {
